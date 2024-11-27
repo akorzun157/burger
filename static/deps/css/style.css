@@ -1,0 +1,436 @@
+body{
+    margin: 0px;
+}
+
+.container{
+    margin: 0px 150px;
+}
+
+header{
+    background-image: url("../images/header-bg.png");
+    height: 904px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img{
+    margin-right: 178px;
+}
+
+.nav-item{
+    font-family: Roboto;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-left: 28px;
+}
+
+.nav-item:hover{
+    color: #F6762C;
+}
+
+.orange-btn{
+    text-decoration: none;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 16px;
+    background-color: #F6762C;
+    padding: 15px 36px;
+    border-radius: 5px;
+}
+
+.orange-btn-left224{
+    margin-left: 224px;
+}
+
+.orange-btn-left422{
+    margin-left: 422px;
+}
+
+.orange-btn:hover{
+    background-color: #f15f0a;
+}
+
+.header-down{
+    margin-top: 182px;
+    padding-bottom: 238px;
+}
+
+.header-above-text{
+    font-family: Roboto;
+    color: #6E6A67;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.header-title{
+    font-family: Roboto;
+    color: #fff;
+    font-size: 57.33px;
+    font-weight: 400;
+    width: 555px;
+    margin-bottom: 37px;
+}
+
+.header-desc{
+    font-family: Roboto;
+    color: #BBB7B7;
+    font-size: 18px;
+    width: 523px;
+    margin-bottom: 42px;
+}
+
+.menu{
+    background-color: #1C1C1C;
+    height: 487px;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: center;
+    padding: 82px 0px;
+}
+
+.menu-item{
+    width: 262px;
+    height: 323px;
+    background-color: #312F30;
+    border-radius: 7px;
+    margin-right: 31px;
+}
+
+.menu-item:hover{
+    background-color: #242323;
+}
+
+.menu-title{
+    font-family: Roboto;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 28px;
+}
+
+.menu-desc{
+    font-family: Roboto;
+    color: #C1C1C1;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 13px;
+    margin-left: 19px;
+    margin-right: 19px;
+}
+
+.burger{
+    background-color: #312F30;
+    height: 543px;
+}
+
+.burger-holder{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger-text{
+    margin-left: 158px;
+}
+
+.burger-title{
+    color: #fff;
+    font-family: Roboto;
+    font-size: 44.2px;
+    margin-bottom: 24px;
+}
+
+.burger-desc{
+    color: #C1C1C1;
+    font-family: Roboto;
+    font-size: 16px;
+    width: 368px;
+    margin-bottom: 13px;
+}
+
+.burger-price{
+    color: #F6762C;
+    font-family: Roboto;
+    font-size: 16px;
+    margin-bottom: 13px;
+}
+
+.line-through{
+    color: #93522E;
+    font-family: Roboto;
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.burger-btn{
+    text-decoration: none;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 16px;
+    background-color: #F6762C;
+    padding: 15px 36px;
+    border-radius: 5px;
+}
+
+.burger-btn:hover{
+    background-color: #f15f0a;
+}
+
+.discounts{
+    background-color: #1C1C1C;
+    height: 926px;
+}
+
+.discounts-holder{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+}
+
+.discounts-left{
+    margin-right: 30px;
+}
+
+.discounts-left-image-up{
+    position: relative;
+    background-image: url("../images/discounts-image1.png");
+    background-repeat: no-repeat;
+    width: 555px;
+    height: 301px;
+    margin-bottom: 30px;
+}
+
+.discounts-left-image-down{
+    position: relative;
+    background-image: url("../images/discounts-image3.png");
+    background-repeat: no-repeat;
+    width: 555px;
+    height: 301px;
+}
+
+.discounts-right-image-up{
+    position: relative;
+    background-image: url("../images/discounts-image2.png");
+    background-repeat: no-repeat;
+    width: 555px;
+    height: 301px;
+    margin-bottom: 30px;
+}
+
+.discounts-right-image-down{
+    position: relative;
+    background-image: url("../images/discounts-image4.png");
+    background-repeat: no-repeat;
+    width: 555px;
+    height: 301px;
+}
+
+.discounts-content-left{
+    position: absolute;
+    margin-left: 290px;
+    margin-top: 63px;
+}
+
+.discounts-content-right{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 63px;
+}
+
+.discount-title{
+    color: #fff;
+    font-family: Roboto;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.discount-desc{
+    color: #C1C1C1;
+    font-family: Roboto;
+    font-size: 16px;
+    width: 263px;
+    margin-bottom: 11px;
+}
+
+.discount-price{
+    color: #F6762C;
+    font-family: Roboto;
+    font-size: 16px;
+    margin-bottom: 11px;
+}
+
+.discount-btn{
+    text-decoration: none;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 16px;
+    background-color: #F6762C;
+    padding: 15px 36px;
+    border-radius: 5px;
+}
+
+.discount-btn:hover{
+    background-color: #f15f0a;
+}
+
+.feedback{
+    background-color: #1C1C1C;
+    height: 555px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.feedback-holder{
+    display: flex;
+    justify-content: center;
+    height: 346px;
+    width: 851px;
+    /*margin:*/
+}
+
+.feedback-img{
+    height: 360px;
+}
+
+.feedback-text{
+    margin-left: 118px;
+}
+
+.feedback-text-img{
+    margin-top: 60px;
+    margin-left: 160px;
+    margin-bottom: 37px;
+}
+
+.feedback-desc{
+    color: #C1C1C1;
+    font-family: Roboto;
+    font-size: 16px;
+    width: 368px;
+    text-align: center;
+    margin-bottom: 27px;
+}
+
+.feedback-name{
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.feedback-nationality{
+    color: #C1C1C1;
+    font-family: Roboto;
+    font-size: 12px;
+    text-align: center;
+}
+
+.download{
+    background-color: #312F30;
+    height: 170px;
+}
+
+.download-holder{
+    display: flex;
+    padding-top: 62px;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-title{
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #1C1C1C;
+    height: 381px;
+}
+
+.footer-items{
+    display: flex;
+    padding-top: 126px;
+}
+
+.footer-item-logo{
+    margin-right: 92px;
+}
+
+.footer-title{
+    color: #fff;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer-email{
+    display: flex;
+    align-items: center;
+}
+
+.footer-web{
+    display: flex;
+    align-items: center;
+}
+
+
+.footer-email-name{
+    color: #D2D2D2;
+    font-family: Roboto;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+.footer-web-name{
+    color: #D2D2D2;
+    font-family: Roboto;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.footer-item{
+    margin-right: 100px;
+}
+
+.footer-other{
+    color: #D2D2D2;
+    font-family: Roboto;
+    font-size: 12px;
+}
+
+.footer-other:hover{
+    color: #F6762C;
+}
+
+.footer-social-logo{
+    display: flex;
+}
+
+.footer-social-img{
+    margin-right: 10px;
+}
+
+.footer-social{
+    padding-top: 30px;
+}
+

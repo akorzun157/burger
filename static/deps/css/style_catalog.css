@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.menu-items{
+    display: flex;
+    align-items: center;
+}
+
+.menu-item{
+    background-color: #312F30;
+    margin: 20px 20px;
+    border-radius: 10px;
+}
+
+.cart-title{
+    text-decoration: none;
+    color: #fff;
+    margin-left:20px;
+    margin-top:10px;
+}
+
+.cart-text{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.price{
+    color: #fff;
+    margin-left:20px;
+}
+
+.in-cart{
+    text-decoration: none;
+    font-family: Roboto;
+    color: #fff;
+    font-size: 16px;
+    background-color: #F6762C;
+    padding: 15px 36px;
+    border-radius: 5px;
+    border: none;
+    margin: 20px 20px;
+    transition: 0.3s;
+}
+
+.in-cart:hover{
+    background-color: #fc6812;
+}
