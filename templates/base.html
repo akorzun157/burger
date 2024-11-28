@@ -6,7 +6,7 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="{% static 'deps/css/style.css' %}">
         {% block css %}{% endblock %}
-        <title>Restaurant</title>
+        <title>{{ title }}</title>
     </head>
     <body>
         <header>
@@ -20,15 +20,24 @@
                     <nav>
                         <a class="nav-item" href="{% url 'menu:menu' %}"><span>МЕНЮ</span></a>
                         <a class="nav-item" href="{% url 'main:about_us' %}">О НАС</a>
-                        <a class="nav-item" href="#">КОРЗИНА</a>
                         <a class="nav-item" href="#">ОТЗЫВЫ</a>
                         <a class="nav-item" href="{% url 'main:addresses' %}">АДРЕСА</a>
+                        <div class="dropdown">
+                            <div class="nav-item">ПРОФИЛЬ</div>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item text-white" href="#">КОРЗИНА</a></li>
+                                <li><a class="dropdown-item text-white" href="{% url 'admin:index' %}">АДМИН ПАНЕЛЬ</a></li>
+                                <li><a class="dropdown-item text-white" href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
+                                <li><a class="dropdown-item text-white" href="#">ВЫЙТИ</a></li>
+                            </ul>
+                        </div>
                     </nav>
                     <div class="header-button">
                         <a class="orange-btn orange-btn-left224" href="#">ЗАКАЗАТЬ</a>
                     </div>
                 </div>
             </div>
+            
 
             {% block header_content %}{% endblock  %}
         </header>

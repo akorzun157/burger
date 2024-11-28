@@ -13,29 +13,30 @@ header{
     background-size: cover;
 }
 
-.header-line{
+.header-line {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo-img{
+.logo-img {
     margin-right: 178px;
 }
 
-.nav-item{
+.nav-item {
     font-family: Roboto;
     color: #fff;
     text-decoration: none;
     font-size: 14px;
     margin-left: 28px;
+    position: relative; /* Добавлено для правильного позиционирования выпадающего меню */
 }
 
-.nav-item:hover{
+.nav-item:hover {
     color: #F6762C;
 }
 
-.orange-btn{
+.orange-btn {
     text-decoration: none;
     font-family: Roboto;
     color: #fff;
@@ -46,16 +47,56 @@ header{
     border: none;
 }
 
-.orange-btn-left224{
+.orange-btn-left224 {
     margin-left: 224px;
 }
 
-.orange-btn-left422{
+.orange-btn-left422 {
     margin-left: 422px;
 }
 
-.orange-btn:hover{
+.orange-btn:hover {
     background-color: #f15f0a;
+}
+
+/* Стили для выпадающего меню */
+.dropdown {
+    position: relative; /* Позиционирование для выпадающего меню */
+    display: inline-block; /* Размещение в одной строке с другими элементами меню */
+}
+
+.dropdown-menu {
+    display: none; /* Скрываем выпадающее меню по умолчанию */
+    position: absolute; /* Позиционирование выпадающего меню */
+    background-color: #333; /* Цвет фона выпадающего меню */
+    min-width: 160px; /* Минимальная ширина выпадающего меню */
+    z-index: 1; /* Установка z-index для отображения поверх других элементов */
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем внешние отступы */
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid #444; /* Разделитель между пунктами */
+}
+
+.dropdown-menu li a {
+    color: white; /* Цвет текста */
+    font-family: Roboto;
+    font-size: 16px;
+    text-decoration: none; /* Убираем подчеркивание */
+    display: block; /* Устанавливаем блок для удобства клика */
+    padding: 10px 15px; /* Отступы внутри пунктов */
+}
+
+.dropdown-menu li a:hover {
+    background-color: #575757;
+    color: #F6762C; /* Цвет фона при наведении на пункт выпадающего меню */
+}
+
+/* Показываем выпадающее меню при наведении на элемент "ПРОФИЛЬ" */
+.dropdown:hover .dropdown-menu {
+    display: block; /* Показываем меню */
 }
 
 .header-down{
