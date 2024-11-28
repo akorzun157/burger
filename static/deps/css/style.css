@@ -43,6 +43,7 @@ header{
     background-color: #F6762C;
     padding: 15px 36px;
     border-radius: 5px;
+    border: none;
 }
 
 .orange-btn-left224{
@@ -434,3 +435,39 @@ li{
     padding-top: 30px;
 }
 
+@media (min-width: 768px) {
+    .header-line {
+        flex-direction: row; /* Верните в строку для больших экранов */
+        justify-content: space-between;
+    }
+
+    .nav-item {
+        margin-left: 28px;
+    }
+
+    .header-btn {
+        margin-left: 0; /* Уберите левый отступ на больших экранах */
+    }
+
+    .menu-items {
+        display: flex; /* Используйте flexbox для размещения элементов меню */
+        flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+        justify-content: center;
+    }
+
+    .menu-item {
+        margin: 15px; /* Увеличьте отступ между элементами меню */
+    }
+
+    .burger-holder {
+        flex-direction: row; /* Верните в строку для больших экранов */
+    }
+
+    .discounts-holder {
+        display: flex; /* Используйте flexbox для размещения элементов скидок */
+        justify-content: space-between;
+        flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    }
+
+    /* Дополнительные стили для других секций */
+}

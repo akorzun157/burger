@@ -1,50 +1,112 @@
-.container{
-    display: flex;
-    justify-content: center;
-}
-
-.menu-items{
-    display: flex;
-    align-items: center;
-}
-
-.menu-item{
-    background-color: #312F30;
-    margin: 20px 20px;
-    border-radius: 10px;
-}
-
-.cart-title{
-    text-decoration: none;
-    color: #fff;
-    margin-left:20px;
-    margin-top:10px;
-}
-
-.cart-text{
-    text-decoration: none;
-    color: #fff;
-    margin-left: 20px;
-}
-
-.price{
-    color: #fff;
-    margin-left:20px;
-}
-
-.in-cart{
-    text-decoration: none;
+.menu-theme-title{
     font-family: Roboto;
     color: #fff;
-    font-size: 16px;
-    background-color: #F6762C;
-    padding: 15px 36px;
-    border-radius: 5px;
-    border: none;
-    margin: 20px 20px;
-    transition: 0.3s;
+    justify-self: center;
+    font-size: 40px;
 }
 
-.in-cart:hover{
-    background-color: #fc6812;
+.limited-text {
+    width: 240px; /* Задайте ширину контейнера */
+    overflow: hidden; /* Скрывает переполнение */
+    text-overflow: ellipsis; /* Добавляет "..." в конце обрезанного текста */
+    white-space: nowrap; /* Запрещает перенос строк */
+}
+
+.font-roboto{
+    font-family: Roboto;
+}
+
+.dishes-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Позволяет карточкам обтекать друг друга */
+    overflow-y: auto; /* Позволяет вертикальную прокрутку */
+    height: 600px; /* Высота контейнера для прокрутки */
+    padding-bottom: 10px; /* Отступ снизу для удобства */
+    scroll-behavior: smooth; /* Плавная прокрутка */
+}
+
+.dishes-items::-webkit-scrollbar {
+    display: none; /* Скрываем вертикальный скроллбар для Chrome, Safari и Opera */
+}
+
+.dishes-items {
+    -ms-overflow-style: none; /* Для Internet Explorer и Edge */
+    scrollbar-width: none; /* Для Firefox */
+}
+
+.dish-item{
+    width: 262px;
+    height: auto;
+    background-color: #312F30;
+    border-radius: 7px;
+    margin: 50px 20px;
+}
+
+.dish-item:hover{
+    background-color: #242323;
+}
+
+.dish-title{
+    text-decoration: none;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.dish-title:hover{
+    color: #f15f0a;
+}
+
+.dish-desc{
+    color: #fff;
+    margin-left: 10px;
+}
+
+.dish-price{
+    color: #fff;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.orange-btn-marg-bl-10{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.page-btn {
+    background-color: #f15f0a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#page-info{
+    color: #fff;
+}
+
+.page-btn:hover {
+    background-color: #e14e0a;
+}
+
+/* Для мелких экранов, чтобы карточки занимали меньше пространства */
+@media (max-width: 768px) {
+    .dish-item {
+        flex: 0 0 calc(50% - 20px); /* 2 карточки в ряд */
+    }
+}
+
+@media (max-width: 480px) {
+    .dish-item {
+        flex: 0 0 100%; /* 1 карточка в ряд */
+    }
 }
