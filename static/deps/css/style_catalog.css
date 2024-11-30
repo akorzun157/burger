@@ -1,10 +1,63 @@
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-right: 20px; /* Отступ между меню и заголовком */
+}
+
+.dropbtn {
+    background-color: #f15f0a; /* Цвет кнопки */
+    color: white; /* Цвет текста */
+    padding: 10px; /* Отступы */
+    font-size: 16px; /* Размер шрифта */
+    border: none; /* Без рамки */
+    cursor: pointer; /* Курсор при наведении */
+    border-radius: 5px;
+}
+
+.dropdown-content {
+    display: none; /* Скрыть меню по умолчанию */
+    position: absolute; /* Позиционирование */
+    background-color: #333; /* Цвет фона */
+    min-width: 160px; /* Минимальная ширина */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Тень */
+    z-index: 1; /* На переднем плане */
+}
+
+.dropdown-content a {
+    font-family: Roboto;
+    color: #fff; /* Цвет текста ссылок */
+    padding: 12px 16px; /* Отступы */
+    text-decoration: none; /* Убрать подчеркивание */
+    display: block; /* Блоковые элементы */
+    border-bottom: 1px solid #444;
+}
+
+.dropdown-content a:hover{
+    background-color: #575757;
+    color: #F6762C;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block; /* Показать меню при наведении */
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41; /* Цвет кнопки при наведении */
+}
+
 .menu-theme-title{
     font-family: Roboto;
     color: #fff;
     justify-self: center;
     font-size: 40px;
 }
-
 
 .font-roboto{
     font-family: Roboto;
