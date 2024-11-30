@@ -10,150 +10,19 @@
     <div class="menu-theme-title">НАШЕ МЕНЮ</div>
     <hr>
     <div class="dishes-items">
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-1.png' %}" alt="">
+        {% for product in menu %}
+            <div class="dish-item">
+                <div class="cart-image">
+                    {% if product.image %}
+                        <img src='{{ product.image.url }}' class="card-img-top" alt="{{ product.name }}">
+                    {% endif %}
+                </div>
+                <a href="" class="dish-title font-roboto">{{ product.name|truncatechars:17}}</a>
+                <p class="dish-desc font-roboto">{{ product.description|truncatechars:17}}</p>
+                <div class="dish-price font-roboto">{{product.price}} ₽</div>
+                <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
             </div>
-            <a href="" class="dish-title font-roboto">Chicken Paella</a>
-            <p class="dish-desc font-roboto limited-text">We just don't make and sell food.Good food warms.</p>
-            <div class="dish-price font-roboto">5 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-2.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Taco Del Mar</a>
-            <p class="dish-desc font-roboto limited-text">Taco Del Mar brings the best out of Mexican cuisine with fresh.</p>
-            <div class="dish-price font-roboto">2 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-3.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Bon Au Pain</a>
-            <p class="dish-desc font-roboto limited-text">Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-            <div class="dish-price font-roboto">3 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-3.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Bon Au Pain</a>
-            <p class="dish-desc font-roboto limited-text">Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-            <div class="dish-price font-roboto">3 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-3.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Bon Au Pain</a>
-            <p class="dish-desc font-roboto limited-text">Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-            <div class="dish-price font-roboto">3 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-3.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Bon Au Pain</a>
-            <p class="dish-desc font-roboto limited-text">Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-            <div class="dish-price font-roboto">3 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-3.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Bon Au Pain</a>
-            <p class="dish-desc font-roboto limited-text">Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-            <div class="dish-price font-roboto">3 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-3.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Bon Au Pain</a>
-            <p class="dish-desc font-roboto limited-text">Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-            <div class="dish-price font-roboto">3 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-3.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Bon Au Pain</a>
-            <p class="dish-desc font-roboto limited-text">Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-            <div class="dish-price font-roboto">3 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-3.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Bon Au Pain</a>
-            <p class="dish-desc font-roboto limited-text">Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-            <div class="dish-price font-roboto">3 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-3.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Bon Au Pain</a>
-            <p class="dish-desc font-roboto limited-text">Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-            <div class="dish-price font-roboto">3 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-3.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Bon Au Pain</a>
-            <p class="dish-desc font-roboto limited-text">Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-            <div class="dish-price font-roboto">3 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-1.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Chicken Paella</a>
-            <p class="dish-desc font-roboto limited-text">We just don't make and sell food.Good food warms.</p>
-            <div class="dish-price font-roboto">5 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-2.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Taco Del Mar</a>
-            <p class="dish-desc font-roboto limited-text">Taco Del Mar brings the best out of Mexican cuisine with fresh.</p>
-            <div class="dish-price font-roboto">2 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-3.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Bon Au Pain</a>
-            <p class="dish-desc font-roboto limited-text">Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-            <div class="dish-price font-roboto">3 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
-        <div class="dish-item">
-            <div class="cart-image">
-                <img src="{% static 'deps/images/menu-3.png' %}" alt="">
-            </div>
-            <a href="" class="dish-title font-roboto">Bon Au Pain</a>
-            <p class="dish-desc font-roboto limited-text">Bon Au Pain is a pioneer in the healthy fast food scene.</p>
-            <div class="dish-price font-roboto">3 $</div>
-            <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
-        </div>
+        {% endfor %}
     </div>
     <hr>
 </div>

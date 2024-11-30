@@ -30,4 +30,4 @@ class Products(models.Model):
         ordering = ("id",)
 
     def __str__(self):
-        return f'{self.name}'
+        return self.name

@@ -5,12 +5,6 @@
     font-size: 40px;
 }
 
-.limited-text {
-    width: 240px; /* Задайте ширину контейнера */
-    overflow: hidden; /* Скрывает переполнение */
-    text-overflow: ellipsis; /* Добавляет "..." в конце обрезанного текста */
-    white-space: nowrap; /* Запрещает перенос строк */
-}
 
 .font-roboto{
     font-family: Roboto;
