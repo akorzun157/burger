@@ -1,12 +1,18 @@
-from django.shortcuts import render
+from django.shortcuts import get_object_or_404, render
 
 from menu.models import Categories, Products
 
 # Create your views here.
-def menu(request):
+def menu(request, category_slug=None):
+    
+    menu = Products.objects.all() 
+    categories = Categories.objects.all()  
 
-    menu = Products.objects.all()
-    categories = Categories.objects.all()
+    if category_slug == 'all' or category_slug is None:
+        menu = Products.objects.all() 
+    else:
+        category = get_object_or_404(Categories, slug=category_slug)
+        menu = Products.objects.filter(category=category)
 
     context = {
         'title': 'Burger - Меню',
