@@ -92,6 +92,12 @@
 
 .dish-item:hover{
     background-color: #242323;
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+.card-img-top{
+    border-radius: 5px;
 }
 
 .dish-title{
@@ -143,6 +149,16 @@
 
 .page-btn:hover {
     background-color: #e14e0a;
+}
+
+.product-item{
+    width: 800px; /* Ширина карточки */
+    height: auto; /* Автоматическая высота */
+    background-color: #312F30; /* Цвет фона */
+    border-radius: 10px; /* Закругленные углы */
+    margin: 50px 20px; /* Отступы */
+    padding: 20px; /* Внутренние отступы */
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
 }
 
 /* Для мелких экранов, чтобы карточки занимали меньше пространства */

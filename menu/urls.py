@@ -10,4 +10,5 @@ app_name = 'menu'
 
 urlpatterns = [
         path('', views.menu, name='menu'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+        path('product/<slug:product_slug>', views.product, name='product'),
+]

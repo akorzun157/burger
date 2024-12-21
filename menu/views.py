@@ -14,3 +14,10 @@ def menu(request):
         'categories': categories,
     }
     return render(request, 'menu/menu.html', context)
+
+def product(request, product_slug):
+    product = Products.objects.get(slug=product_slug)
+
+    context = {"product": product}
+
+    return render(request, 'menu/product.html', context)
