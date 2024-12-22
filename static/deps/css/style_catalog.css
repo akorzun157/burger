@@ -65,7 +65,7 @@
 
 .dishes-items {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap; /* Позволяет карточкам обтекать друг друга */
     overflow-y: auto; /* Позволяет вертикальную прокрутку */
     height: 600px; /* Высота контейнера для прокрутки */
@@ -98,6 +98,10 @@
 
 .card-img-top{
     border-radius: 5px;
+}
+
+.dish-link{
+    text-decoration: none;
 }
 
 .dish-title{

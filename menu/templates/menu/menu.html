@@ -22,14 +22,16 @@
     <div class="dishes-items">
         {% for product in menu %}
             <div class="dish-item">
-                <div class="cart-image">
-                    {% if product.image %}
-                        <img src='{{ product.image.url }}' class="card-img-top" alt="{{ product.name }}">
-                    {% endif %}
-                </div>
-                <a href="{% url 'menu:product' product.slug %}" class="dish-title font-roboto">{{ product.name|truncatechars:17}}</a>
-                <p class="dish-desc font-roboto">{{ product.description|truncatechars:17}}</p>
-                <div class="dish-price font-roboto">{{ product.price }} ₽</div>
+                <a href="{% url 'menu:product' product.slug %}" class="dish-link">
+                    <div class="cart-image">
+                        {% if product.image %}
+                            <img src='{{ product.image.url }}' class="card-img-top" alt="{{ product.name }}">
+                        {% endif %}
+                    </div>
+                    <h3 class="dish-title font-roboto">{{ product.name|truncatechars:15 }}</h3>
+                    <p class="dish-desc font-roboto">{{ product.description|truncatechars:17 }}</p>
+                    <div class="dish-price font-roboto">{{ product.price }} ₽</div>
+                </a>
                 <button class="orange-btn orange-btn-marg-bl-10">В корзину</button>
             </div>
         {% endfor %}
