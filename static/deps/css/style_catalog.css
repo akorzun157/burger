@@ -135,22 +135,9 @@
     font-size: 30px;
 }
 
-/* .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.page-btn {
-    background-color: #f15f0a;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 10px;
-    cursor: pointer;
+.product-img-top{
     border-radius: 5px;
-} */
+}
 
 #page-info{
     color: #fff;
@@ -160,7 +147,13 @@
     background-color: #e14e0a;
 }
 
+.product-holder{
+    display: flex;
+    justify-content: center;
+}
+
 .product-item{
+    display: flex;
     width: 800px; /* Ширина карточки */
     height: auto; /* Автоматическая высота */
     background-color: #312F30; /* Цвет фона */
@@ -168,6 +161,16 @@
     margin: 50px 20px; /* Отступы */
     padding: 20px; /* Внутренние отступы */
     box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+
+.product-info{
+    margin-left: 50px;
+}
+
+
+.product-buttons{
+    margin-top: 150px;
 }
 
 /* Для мелких экранов, чтобы карточки занимали меньше пространства */
