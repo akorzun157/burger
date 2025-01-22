@@ -27,13 +27,13 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item text-white" href="#">КОРЗИНА</a></li>
                                 <li><a class="dropdown-item text-white" href="{% url 'admin:index' %}">АДМИН ПАНЕЛЬ</a></li>
-                                <li><a class="dropdown-item text-white" href="{url 'users:profile'}">ЛИЧНЫЙ КАБИНЕТ</a></li>
-                                <li><a class="dropdown-item text-white" href="{url 'users:logout'}">ВЫЙТИ</a></li>
+                                <li><a class="dropdown-item text-white" href="{url 'user:profile'}">ЛИЧНЫЙ КАБИНЕТ</a></li>
+                                <li><a class="dropdown-item text-white" href="{url 'user:logout'}">ВЫЙТИ</a></li>
                             </ul>
                         </div>
                     </nav>
                     <div class="header-button">
-                        <a class="orange-btn orange-btn-left224" href="{% url 'users:login' %}">ВОЙТИ</a>
+                        <a class="orange-btn orange-btn-left224" href="{% url 'user:login' %}">ВОЙТИ</a>
                     </div>
                 </div>
             </div>
