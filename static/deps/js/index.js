@@ -7,3 +7,5 @@ dishesItems.addEventListener('wheel', (e) => {
         //behavior: 'smooth' // Плавная прокрутка
     });
 });
+
+

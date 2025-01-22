@@ -27,8 +27,8 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item text-white" href="#">КОРЗИНА</a></li>
                                 <li><a class="dropdown-item text-white" href="{% url 'admin:index' %}">АДМИН ПАНЕЛЬ</a></li>
-                                <li><a class="dropdown-item text-white" href="#">ЛИЧНЫЙ КАБИНЕТ</a></li>
-                                <li><a class="dropdown-item text-white" href="#">ВЫЙТИ</a></li>
+                                <li><a class="dropdown-item text-white" href="{url 'users:profile'}">ЛИЧНЫЙ КАБИНЕТ</a></li>
+                                <li><a class="dropdown-item text-white" href="{url 'users:logout'}">ВЫЙТИ</a></li>
                             </ul>
                         </div>
                     </nav>
@@ -44,6 +44,6 @@
 
         {% block content %}{% endblock %}
 
-        <!-- <script src="{% static 'deps/js/index.js' %}"></script>-->
+        <script src="{% static 'deps/js/index.js' %}"></script>
     </body>
 </html>
